@@ -119,17 +119,19 @@ public class Main {
 
         //Домашнее задание 3. Задача 3
         System.out.println("Домашнее задание 3. Задача 3");
-        int one = 4;
-        int two = 8;
-        int three = 10;
+        int one = 5;
+        int two = 5;
+        int three = 5;
         if (one >= two && one > three) {
             System.out.println("Самым большим числом является two и оно равно " + one);
         } else if (one > two && one <= three) {
             System.out.println("Самым большим числом является one и оно равно " + three);
         } else if (two > one && two > three) {
             System.out.println("Самым большим числом является one и оно равно " + two);
-        } else {
+        } else if (three > one && two < three) {
             System.out.println("Самым большим числом является three и оно равно " + three);
+        } else {
+            System.out.println("Все три числа равны " + one);
         }
 
     }
