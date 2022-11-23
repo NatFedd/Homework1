@@ -32,11 +32,39 @@ public class Main {
         }
         //Задача 4
         System.out.println("Задача 4");
-        int deliveryDistance = 95;
-
-        float (deliveryDistance % 40) {
-            System.out.println("Потребуется дней" + );
+        int deliveryDistance = 60;
+        int deliveryDays = 1;
+        if (deliveryDistance <= 20){
+            System.out.println("Потребуется " + deliveryDays + " день для доставки карты");
+        }
+        else {
+            System.out.println("Потребуется " + (((deliveryDistance - 20) / 40 + deliveryDays+1)) + " дня(-ей) для доставки карты") ;
+        }
+        //Задача 5
+        System.out.println("Задача 5");
+        int monthNumber = 14;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+            System.out.println("Зимний месяц");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весенний месяц");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Летний месяц");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осенний месяц");
+                default:
+                    System.out.println("Такого месяца не существует");
         }
     }
-
 }
