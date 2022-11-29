@@ -10,12 +10,31 @@ public class Main {
             i = total / accumulation;
         }
         System.out.println("Месяц " + i + ". Сумма накоплений равна " + total + " рублей");
+
+
         //Домашнее задание 1. Задача 2
         System.out.println("Домашнее задание 1. Задача 2");
+        int b = 0;
+        while (b < 10) {
+            b++;
+            System.out.print(b + " ");
+        }
+        System.out.println(" ");
+        for (int a = 10; a > 0; a--) {
+            System.out.print(a + " ");
+        }
+        System.out.println(" ");
 
 
-
-
+        //Домашнее задание 1. Задача 3
+        System.out.println("Домашнее задание 1. Задача 3");
+        int birthRate = 17;
+        int mortality = -8;
+        int population = 12_000_000;
+        for (int years = 1; years <= 10; years++) {
+            population = population + birthRate + mortality;
+            System.out.println("Год " + years + ", численность населения составляет " + population + " человек");
+        }
     }
 
 }
